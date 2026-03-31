@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Masum Ahmed | Android Developer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(-45deg, #0f172a, #020617, #1e293b, #0f172a);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    color:white;
+}
+
+/* BACKGROUND ANIMATION */
+@keyframes gradientBG{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+/* NAVBAR */
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:rgba(15,23,42,0.9);
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    z-index:1000;
+}
+
+nav h2{
+    color:#38bdf8;
+}
+
+nav a{
+    color:white;
+    margin-left:20px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:50px;
+    animation:fadeIn 2s ease;
+}
+
+.hero p{
+    margin:10px 0;
+    color:#94a3b8;
+}
+
+.btn{
+    margin-top:20px;
+    padding:12px 25px;
+    border:none;
+    background:#38bdf8;
+    color:black;
+    border-radius:25px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.1);
+}
+
+/* SECTION */
+section{
+    padding:80px 50px;
+}
+
+/* CARD */
+.card{
+    background:#1e293b;
+    padding:20px;
+    margin:20px 0;
+    border-radius:15px;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 30px rgba(0,0,0,0.5);
+}
+.project-img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:10px;
+    margin-bottom:10px;
+    transition:0.4s;
+}
+
+.card:hover .project-img{
+    transform:scale(1.05);
+}
+
+/* SKILLS */
+.skills span{
+    display:inline-block;
+    background:#38bdf8;
+    color:black;
+    padding:8px 15px;
+    margin:5px;
+    border-radius:20px;
+}
+
+/* PROJECT GRID */
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+    gap:20px;
+}
+
+/* ANIMATION */
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#020617;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    nav{
+        padding:15px;
+    }
+    .hero h1{
+        font-size:32px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2>Masum</h2>
+    <div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<div class="hero">
+    <h1>Assalamualaikum, I'm Masum Ahmed</h1>
+    <p>Android Developer | Development & IT Project Management Skills <br>
+	<a href="https://www.grameenphone.academy/cert/f421bed1f922">2D Animator</a> |  
+	<a href="http://202.72.235.217:3082/madrasa/teacher-staff-info">🖥️ICT Teacher & Computer Expert </a> |
+	<a href="https://ghoorilearning.com/certificate-share/GL-00210527791"> Radio/TV Presentation </a>
+</p>
+	
+<p>
+
+	💻 Computer Operation Certified NSDA Level 3<br>
+	🖥️ IT Support Certified NTVQF Level-1<br>
+	🖱️Certified JICA ICT teacher Trainee <br>
+	⌨️ Ex. Technical Trainer of Brac
+
+</p>
+	<div>
+        <button class="btn" onclick="scrollToSection('projects')">View Projects</button>
+        <a href="cv.pdf"><button class="btn">Download CV</button></a>
+        <a href="#contact"><button class="btn">Hire Me</button></a>
+    	</div>
+    
+</div>
+
+
+
+<section id="about">
+    <div class="card">
+        <h2>About Me</h2>
+        <p>I build modern Android apps with Firebase, API integration, and beautiful UI/UX design. I focus on performance, scalability, and user experience.
+I have over 10 years of experience in creating databases, maintaining IT systems, and training others in technology. 
+As a Technical Trainer, I've successfully led IT training programs that empower individuals and foster technical skills. 
+My approach focuses on building efficient processes and creating a positive impact through education. 
+I thrive in competitive environments and seek opportunities where I can leverage my skills to yield tangible benefits for clients. Whether it's designing training modules or providing hands-on support, I bring energy and dedication to every project. If you're looking for an IT professional who can enhance your team's capabilities and streamline your systems, 
+let’s connect and discuss how I can contribute to your success.</p>
+    </div>
+</section>
+
+<section id="skills">
+    <div class="card">
+        <h2>Skills</h2>
+        <div class="skills">
+            <span>Java</span>
+            <span>XML</span>
+		<span>REST API</span>
+		<span>Android Studio</span>
+		<span>Firebase</span>
+
+	
+	<span>Mysql</span>
+	<span>Python</span>
+	<span>IT Services</span>
+            <span>Ms Office</span>
+            <span>Networking & Printer</span>
+
+            <span>Systems Expertise</span>
+
+	<span>Development & IT Project Management Skills</span>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+
+        <div class="card">
+		<img src="rugi.png" class="project-img">
+            <h3>Doctor App</h3>
+            <p>Appointment booking + video call system</p>
+        </div>
+
+        <div class="card">
+		<img src="foodi.png" class="project-img">
+            <h3>Food Delivery App</h3>
+            <p>Cart, order, payment integration</p>
+        </div>
+
+        <div class="card">
+		<img src="masumtracker.png" class="project-img">
+            <h3>Location Tracker</h3>
+            <p>Real-time GPS tracking system</p>
+        </div>
+
+	<div class="card">
+		<img src="masnam.png" class="project-img">
+            <h3>MasNam</h3>
+            <p>Real Name & Phone Number searching app</p>
+        </div>
+	<div class="card">
+		<img src="tasbii.png" class="project-img">
+            <h3>Tazbii</h3>
+            <p>Count your prayer</p>
+        </div>
+	
+	<div class="card">
+		<img src="banglish.png" class="project-img">
+            <h3>Banglish</h3>
+            <p>Learn your Lesson</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <div class="card">
+	<img src="my.jpg" class="project-img">
+        <h2>Contact</h2>
+        <p>Email: amasum078@gmail.com</p>
+        <p>Phone: +8801554404191</p>
+	<p>
+	<a href="https://www.facebook.com/Masum.for">Facebook</a>|
+	<a href="https://github.com/masummit2024-web">Github</a> |
+	<a href="https://www.linkedin.com/in/masum-ahmed-6848b83ba/">linkedin</a> |
+	<a href="https://www.upwork.com/freelancers/~01a585c04c42e4423c?mp_source=share">Upwork</a> | 
+	<a href="https://stackoverflow.com/users/32554692/masum-ahmed">stackoverflow</a> 
+
+
+	</p>
+	
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Masum Ahmed</p>
+</footer>
+
+<script>
+function scrollToSection(id){
+    document.getElementById(id).scrollIntoView({behavior:"smooth"});
+}
+</script>
+
+</body>
+</html>
